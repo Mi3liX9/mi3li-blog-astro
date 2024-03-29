@@ -38,14 +38,14 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
             )
           }
         </div>
-        <div class="prose mx-auto">
+        <div class="prose text-justify mx-auto">
           <div class="mb-1 py-1 text-center">
             <div class="mb-1">
               <FormattedDate date={pubDate} />
               {
                 updatedDate && (
                   <div class="italic">
-                    Last updated on <FormattedDate date={updatedDate} />
+                    تم تحديثه في <FormattedDate date={updatedDate} />
                   </div>
                 )
               }
